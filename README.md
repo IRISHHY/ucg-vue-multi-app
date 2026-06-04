@@ -29,7 +29,6 @@
 
 ### 界面预览
 <img width="320" alt="H5首页截图" src="https://github.com/user-attachments/assets/a593057b-def0-46e5-b393-6cf2e77c5a0e" />
-<img width="320" alt="H5列表页截图" src="https://github.com/user-attachments/assets/80cb6751-a3c7-4238-a86a-ae3208a9ecc8" />
 
 ---
 # Homediary · Home Living Community | Cross-platform UCG Project
