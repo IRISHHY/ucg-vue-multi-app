@@ -1,65 +1,62 @@
-# Homediary · 社区 Web 端
-基于uni-app + uniCloud 的家居社区 UCG Web 项目：内容浏览、发帖、团购与招聘模块（学习向作品）
-|A uni-app community web project for home living content — posts, group-buy and jobs modules. Cloud backend deprecated; includes local mock demo.
+# Homediary · 家居社区 Web 端
 
-> 个人学习项目：uni-app 多端社区应用（内容社区 + 团购 + 招聘）。  
-> 说明：原 uniCloud 后端已停用，当前仓库以源码与本地 Mock 展示为主。
+## 介绍
+本项目是基于 uni-app + uniCloud 开发的**家居社区 UGC 多端项目**，属于个人学习实战作品。项目涵盖内容浏览、用户发帖互动、团购活动、招聘资讯等完整社区模块，支持 H5 移动端与多端适配。
 
-## 功能概览
+项目原依赖 uniCloud 云服务与 Node.js 后端，目前云端环境已停用，仓库保留完整前端源码，并内置本地 Mock 数据降级方案，可直接本地运行演示界面与完整业务逻辑。管理后台因包含敏感配置，暂未开源。
 
-- 首页内容流（文章 / 图文卡片）
-- 论坛与 CMS 文章（`uni-cms-article`）
-- 团购活动、招聘合作页面
-- 用户登录注册、个人中心（`uni-id-pages`）
-- 历史 Node.js 后端目录 `back/`（已弃用，仅供参考）
+### 功能概览
+- 首页图文信息流、社区内容浏览
+- 用户发帖、点赞、评论、收藏等 UGC 互动功能
+- 团购活动、家居招聘合作页面模块
+- 用户注册、登录、个人中心完整权限流程
 
-## 技术栈
+### 技术栈
+- 前端：uni-app（Vue3）、uni-ui、uv-ui
+- 原云后端：uniCloud 支付宝云（现已停用归档）
+- 历史后端：Express + MongoDB（旧版归档代码，仅作学习参考，不再使用）
 
-- 前端：uni-app（Vue 3）、uni-ui / uv-ui
-- 云服务：uniCloud（支付宝云，原环境已停用）
-- 可选后端：`back/`（Express + MongoDB，历史版本）
+### 本地运行方式
+无需联网后端，项目内置 Mock 数据降级逻辑，请求失败自动切换本地演示，可直接通过 HBuilderX 运行到浏览器查看完整界面效果。
 
-## 本地预览（无需云端）
+### 项目说明（学习作品 · 2025.5）
+本项目是我零基础自学编程阶段完成的完整实战项目，无系统专业培训，依靠官方文档、教程与反复调试完成开发，并曾成功上线部署、跑通全部核心业务流程。
 
-后端停服时，可使用首页 **Mock 数据** 进行界面展示（需 HBuilderX 运行到浏览器，或自行构建 H5）。
+- **初期问题**：项目初期采用前端优先的开发模式，作为零基础自学开发者，缺乏架构思维，导致页面、接口、数据逻辑未严格解耦，代码规范性不足，修改功能易引发连锁问题，开发效率较低。
+- **技术复盘**：项目完成后系统学习软件架构知识，深刻理解了分层设计、代码解耦、前后端职责边界的核心意义，纠正了初期无序开发的问题。
+- **流程优化**：迭代出标准化开发流程，转变为后端先行的开发模式，优先完成数据模型、接口、权限的整体设计，再进行前端开发，大幅提升项目稳定性与开发效率。
+- **技术拓展**：自主学习Python技术，搭建系统化的开发、调试、联调体系，补齐自身技术短板。
 
-### 方式一：HBuilderX（推荐）
+### 界面预览
+<img width="320" alt="H5首页截图" src="https://github.com/user-attachments/assets/a593057b-def0-46e5-b393-6cf2e77c5a0e" />
+<img width="320" alt="H5列表页截图" src="https://github.com/user-attachments/assets/80cb6751-a3c7-4238-a86a-ae3208a9ecc8" />
 
-1. 用 HBuilderX 打开本仓库根目录  
-2. 运行 → 运行到浏览器 → Chrome  
-3. 访问首页查看 Mock 帖子与分类
+---
+# Homediary · Home Living Community | Cross-platform UCG Project
 
-### 方式二：静态构建包预览
+## Introduction
+This is a personal learning and practical project, a home furnishing UGC community developed with uni-app and uniCloud. It supports multi-terminal adaptation, including H5 mobile web. The project covers complete community functions such as content browsing, user posting, liking, commenting, group buying and recruitment information modules.
 
-```bash
-cd unpackage/dist/build/web
-python serve_static.py
+The original uniCloud cloud service and Node.js backend are no longer maintained. This repository reserves the complete frontend source code. Local mock data fallback is built in the project for offline demonstration. The admin backend is not open-sourced due to sensitive configuration.
 
-当前状态说明
-原线上 uniCloud / 独立后端 已不再维护。仓库已加入请求失败时自动降级到本地 Mock 的逻辑，便于界面演示。
-仓库保留完整前端与云函数结构，便于学习与二次开发
-管理后台（uni-admin）含敏感信息暂未开源，本仓库仅包含用户端 Web 项目
-——————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+### Features Overview
+- Homepage graphic content stream and community content browsing
+- Complete UGC interaction: user posting, liking, commenting and collecting
+- Group buying activities and home furnishing recruitment modules
+- User registration, login and personal center system
 
-## 项目说明（学习作品） | 2025.5
+### Tech Stack
+- Frontend: uni-app (Vue3), uni-ui, uv-ui
+- Original cloud backend: uniCloud (Alipay Cloud, now deprecated)
+- Legacy backend: Express + MongoDB (archived version, for reference only)
 
-这是一个从零开始学习编程时期完成的作品：当时没有系统培训，主要靠教程、文档和反复试错，在不太熟悉前端/CSS和架构的情况下，仍完成了可运行的社区 Web 应用，并曾部署上线验证核心流程。
+### Local Preview
+No online server required. The project supports local mock data fallback. You can run the project in HBuilderX and preview all page functions directly in the browser.
 
-**曾跑通的功能包括：** 用户内容发布、互动（点赞/评论/收藏）、用户注册登录、个人中心等。  
-当前状态：原云服务器已停止维护。管理后台含敏感配置，未开源。
+### Project Background & Self-Reflection
+This project was independently completed during my early self-learning period. Without systematic professional training, I learned through official documents and continuous trial and error, and successfully deployed the project online with complete available functions.
 
-> 若时间有限，建议优先查看 **截图与下方复盘**，不必细读早期业务代码（结构较乱，属学习过程中的正常痕迹）。
-
-### 用户端H5
-<img width="1920" height="1136" alt="Image" src="https://github.com/user-attachments/assets/a593057b-def0-46e5-b393-6cf2e77c5a0e" />
-<img width="1305" height="1295" alt="Image" src="https://github.com/user-attachments/assets/80cb6751-a3c7-4238-a86a-ae3208a9ecc8" />
-
-项目复盘：
-- **路径：** 第一次做这个完整项目时，是从**前端先入手**的，加上零基础，页面、接口、数据经常缠在一起，改一处牵动多处，整体推进比较慢。
-- **复盘：** 后来阅读了技术架构相关书籍，逐渐意识到**解耦**、分层和边界的重要性——哪些该放前端、哪些该放后端、数据库怎么设计等问题，应事先想清楚。
-- **后续：** 后续开发改为**从后端先设计**（数据模型、接口、权限），并自学 **Python**，配合更**系统化、结构化**的流程（需求 —— 结构 —— 设计 —— 实现 —— 联调 —— 用户测试），完整的开发过程顺畅很多。
-- **本仓库：** 保留的是「前端先行 + 边做边改」阶段的代码，所以更适合当作**学习轨迹**来看，而不是生产级范例。
-
-快速验证比完美代码重要。
-
-后续计划还有时间的话，会重构这个论坛项目，加一些新功能进去。
+- **Early Development Problems**: Initially, I had limited technical knowledge and even struggled with basic CSS. Without systematic architecture or decoupling design, I built features directly from the frontend, tightly coupling styles, business logic, API calls, and data processing. This unstandardized code led to cascading bugs and high modification costs whenever I adjusted functionality or styles.
+- **Technical Summary & Insights**: After completing the project, I systematically learned software architecture theories and deeply understood the importance of layered design, code decoupling and clear boundary division between frontend and backend.
+- **Optimized Development Workflow**: I abandoned the disordered development mode and switched to a standardized backend-first workflow. I complete data model, API and permission design in advance before frontend development, which greatly improves project stability and development efficiency.
+- **Capability Expansion**: To build comprehensive full-stack capabilities, I self-studied Python and established a systematic process for development, debugging and joint testing to make up for technical deficiencies.
