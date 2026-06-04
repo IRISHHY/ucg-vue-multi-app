@@ -1,4 +1,4 @@
-# Homediario · 社区 Web 端
+# Homediary · 社区 Web 端
 基于uni-app + uniCloud 的家居社区 UCG Web 项目：内容浏览、发帖、团购与招聘模块（学习向作品）
 |A uni-app community web project for home living content — posts, group-buy and jobs modules. Cloud backend deprecated; includes local mock demo.
 
@@ -52,12 +52,13 @@ python serve_static.py
 
 ### 用户端H5
 
-![家居论坛客户端](assets/screenshot/home1.png)
-![家居论坛客户端](assets/screenshot/home2.png)
-![家居论坛客户端](assets/screenshot/home3.png)
-![家居论坛客户端](assets/screenshot/selfile.png)
-![家居论坛客户端](assets/screenshot/edit.png)
-![家居论坛客户端](assets/screenshot/other.png)
+<img width="640" height="1136" alt="home2" src="https://github.com/user-attachments/assets/9d35f1e2-ac88-4f36-860e-ec2ffdf8911e" />
+<img width="2544" height="1268" alt="home1" src="https://github.com/user-attachments/assets/bd01cb6a-398f-45d2-8ede-c59c77ee3cb1" />
+<img width="600" height="1068" alt="selfile" src="https://github.com/user-attachments/assets/068a6e23-7ca3-4f96-acf7-aa1dd42316f0" />
+<img width="640" height="1136" alt="home3" src="https://github.com/user-attachments/assets/6dcd1b21-6d6c-43fd-8b42-0dd702332139" />
+<img width="640" height="1136" alt="other" src="https://github.com/user-attachments/assets/7de1d654-02a8-4ebd-8d24-4efa36dc1a5f" />
+<img width="414" height="896" alt="edit" src="https://github.com/user-attachments/assets/5876ffd2-b1e7-48ad-8007-41b3b7c898e8" />
+
 
 项目复盘：
 - **路径：** 第一次做这个完整项目时，是从**前端先入手**的，加上零基础，页面、接口、数据经常缠在一起，改一处牵动多处，整体推进比较慢。
