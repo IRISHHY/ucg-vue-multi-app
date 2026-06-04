@@ -1,2 +1,75 @@
-# ucg-vue-multi-app
-论坛UCG项目，Vue开发跨端应用，一套代码兼容H5、移动端App ，包含客户端和管理端。| UCG Forum, a cross-platform application developed with Vue. One set of source code supports both H5 web page and mobile App，including client side and admin backend.
+# Homediario · 社区 Web 端
+基于uni-app + uniCloud 的家居社区 UCG Web 项目：内容浏览、发帖、团购与招聘模块（学习向作品，云端服务已停用）
+|A uni-app community web project for home living content — posts, group-buy and jobs modules. Cloud backend deprecated; includes local mock demo.
+
+> 个人学习项目：uni-app 多端社区应用（内容社区 + 团购 + 招聘）。  
+> 说明：原 uniCloud 后端已停用，当前仓库以源码与本地 Mock 展示为主。
+
+# 家居日记 Homediario · 社区 Web 端
+
+一个基于 **uni-app + uniCloud** 的家居生活社区项目，包含内容浏览、发帖、团购活动、招聘合作等模块。  
+本项目为个人学习与实践作品，代码结构按「前台 Web 应用」组织。
+
+## 功能概览
+
+- 首页内容流（文章 / 图文卡片）
+- 论坛与 CMS 文章（`uni-cms-article`）
+- 团购活动、招聘合作页面
+- 用户登录注册、个人中心（`uni-id-pages`）
+- 历史 Node.js 后端目录 `back/`（已弃用，仅供参考）
+
+## 技术栈
+
+- 前端：uni-app（Vue 3）、uni-ui / uv-ui
+- 云服务：uniCloud（支付宝云，原环境已停用）
+- 可选后端：`back/`（Express + MongoDB，历史版本）
+
+## 本地预览（无需云端）
+
+后端停服时，可使用首页 **Mock 数据** 进行界面展示（需 HBuilderX 运行到浏览器，或自行构建 H5）。
+
+### 方式一：HBuilderX（推荐）
+
+1. 用 HBuilderX 打开本仓库根目录  
+2. 运行 → 运行到浏览器 → Chrome  
+3. 访问首页查看 Mock 帖子与分类
+
+### 方式二：静态构建包预览
+
+```bash
+cd unpackage/dist/build/web
+python serve_static.py
+
+当前状态说明
+原线上 uniCloud / 独立后端 已不再维护。仓库已加入请求失败时自动降级到本地 Mock 的逻辑，便于界面演示。
+仓库保留完整前端与云函数结构，便于学习与二次开发
+管理后台（uni-admin）含敏感信息暂未开源，本仓库仅包含用户端 Web 项目
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+## 项目说明（学习作品） | 2025.5
+
+这是一个从零开始学习编程时期完成的作品：当时没有系统培训，主要靠教程、文档和反复试错，在不太熟悉前端/CSS和架构的情况下，仍完成了可运行的社区 Web 应用，并曾部署上线验证核心流程。
+
+**曾跑通的功能包括：** 用户内容发布、互动（点赞/评论/收藏）、用户注册登录、个人中心等。  
+当前状态：原云服务器已停止维护。管理后台含敏感配置，未开源。
+
+> 若时间有限，建议优先查看 **截图与下方复盘**，不必细读早期业务代码（结构较乱，属学习过程中的正常痕迹）。
+
+### 用户端H5
+
+![家居论坛客户端](assets/screenshot/home1.png)
+![家居论坛客户端](assets/screenshot/home2.png)
+![家居论坛客户端](assets/screenshot/home3.png)
+![家居论坛客户端](assets/screenshot/selfile.png)
+![家居论坛客户端](assets/screenshot/edit.png)
+![家居论坛客户端](assets/screenshot/other.png)
+
+项目复盘：
+- **路径：** 第一次做这个完整项目时，是从**前端先入手**的，加上零基础，页面、接口、数据经常缠在一起，改一处牵动多处，整体推进比较慢。
+- **复盘：** 后来阅读了技术架构相关书籍，逐渐意识到**解耦**、分层和边界的重要性——哪些该放前端、哪些该放后端、数据库怎么设计等问题，应事先想清楚。
+- **后续：** 后续开发改为**从后端先设计**（数据模型、接口、权限），并自学 **Python**，配合更**系统化、结构化**的流程（需求 —— 结构 —— 设计 —— 实现 —— 联调 —— 用户测试），完整的开发过程顺畅很多。
+- **本仓库：** 保留的是「前端先行 + 边做边改」阶段的代码，所以更适合当作**学习轨迹**来看，而不是生产级范例。
+
+快速验证比完美代码重要。
+
+后续计划还有时间的话，会重构这个论坛项目，加一些新功能进去。
