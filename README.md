@@ -51,11 +51,8 @@ python serve_static.py
 > 若时间有限，建议优先查看 **截图与下方复盘**，不必细读早期业务代码（结构较乱，属学习过程中的正常痕迹）。
 
 ### 用户端H5
-
-![Image](https://github.com/user-attachments/assets/3342847f-0da9-4dbf-95eb-176219985c1e)
+<img width="1920" height="1136" alt="Image" src="https://github.com/user-attachments/assets/a593057b-def0-46e5-b393-6cf2e77c5a0e" />
 <img width="1305" height="1295" alt="Image" src="https://github.com/user-attachments/assets/80cb6751-a3c7-4238-a86a-ae3208a9ecc8" />
-<img width="1887" height="1121" alt="Image" src="https://github.com/user-attachments/assets/f0818d4b-0143-467a-9da0-f60170165df3" />
-
 
 项目复盘：
 - **路径：** 第一次做这个完整项目时，是从**前端先入手**的，加上零基础，页面、接口、数据经常缠在一起，改一处牵动多处，整体推进比较慢。
