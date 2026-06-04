@@ -1,14 +1,9 @@
 # Homediario · 社区 Web 端
-基于uni-app + uniCloud 的家居社区 UCG Web 项目：内容浏览、发帖、团购与招聘模块（学习向作品，云端服务已停用）
+基于uni-app + uniCloud 的家居社区 UCG Web 项目：内容浏览、发帖、团购与招聘模块（学习向作品）
 |A uni-app community web project for home living content — posts, group-buy and jobs modules. Cloud backend deprecated; includes local mock demo.
 
 > 个人学习项目：uni-app 多端社区应用（内容社区 + 团购 + 招聘）。  
 > 说明：原 uniCloud 后端已停用，当前仓库以源码与本地 Mock 展示为主。
-
-# 家居日记 Homediario · 社区 Web 端
-
-一个基于 **uni-app + uniCloud** 的家居生活社区项目，包含内容浏览、发帖、团购活动、招聘合作等模块。  
-本项目为个人学习与实践作品，代码结构按「前台 Web 应用」组织。
 
 ## 功能概览
 
