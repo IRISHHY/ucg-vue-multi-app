@@ -52,12 +52,9 @@ python serve_static.py
 
 ### 用户端H5
 
-<img width="640" height="1136" alt="home2" src="https://github.com/user-attachments/assets/9d35f1e2-ac88-4f36-860e-ec2ffdf8911e" />
-<img width="2544" height="1268" alt="home1" src="https://github.com/user-attachments/assets/bd01cb6a-398f-45d2-8ede-c59c77ee3cb1" />
-<img width="600" height="1068" alt="selfile" src="https://github.com/user-attachments/assets/068a6e23-7ca3-4f96-acf7-aa1dd42316f0" />
-<img width="640" height="1136" alt="home3" src="https://github.com/user-attachments/assets/6dcd1b21-6d6c-43fd-8b42-0dd702332139" />
-<img width="640" height="1136" alt="other" src="https://github.com/user-attachments/assets/7de1d654-02a8-4ebd-8d24-4efa36dc1a5f" />
-<img width="414" height="896" alt="edit" src="https://github.com/user-attachments/assets/5876ffd2-b1e7-48ad-8007-41b3b7c898e8" />
+![Image](https://github.com/user-attachments/assets/3342847f-0da9-4dbf-95eb-176219985c1e)
+<img width="1305" height="1295" alt="Image" src="https://github.com/user-attachments/assets/80cb6751-a3c7-4238-a86a-ae3208a9ecc8" />
+<img width="1887" height="1121" alt="Image" src="https://github.com/user-attachments/assets/f0818d4b-0143-467a-9da0-f60170165df3" />
 
 
 项目复盘：
